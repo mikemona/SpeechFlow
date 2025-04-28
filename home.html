@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,9 +7,191 @@
     <link rel="stylesheet" href="css/main.css" media="all" />
     <title>Speech Flow</title>
   </head>
-  <body>
+  <body class="">
+    <main class="main">
+      <div class="nav-container" id="home"></div>
+      <div class="body">
+        
     <textarea id="speechInput" placeholder="Start writing..."></textarea>
     <button id="startSpeech">Start</button>
     <div id="speechDispay"></div>
+    </main>
+    <div class="drawer-overlay" id="navDrawer">
+      <div class="drawer drawer--nav" id="drawer">
+        <div class="drawer-header">
+          <a href="profile.html" class="drawer-header__profile">
+            <div class="drawer-header__img">
+              <img src="/img/person5.jpg" alt="Person" />
+            </div>
+            <div class="drawer-header__title">
+              Drawer 1
+              <div class="drawer-header__description">124</div>
+            </div>
+          </a>
+          <button class="drawer-header__close" data-drawer-close>
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="menu">
+            <a href="plans.html" class="menu-item">Plans</a>
+            <a href="settings.html" class="menu-item">Settings</a>
+            <div class="divider"></div>
+            <a href="login.html" class="menu-item">Log Out</a>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer1">
+      <div class="drawer" id="drawer">
+        <div class="drawer-header">
+          <h2 class="drawer-header__title">Drawer 1</h2>
+          <button class="drawer-header__close" data-drawer-close>
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-overlay" id="drawer2">
+      <div class="drawer" id="drawer">
+        <div class="drawer-header">
+          <h2 class="drawer-header__title">Drawer 2</h2>
+          <button
+            class="drawer-header__close"
+            id="closeDrawer"
+            data-drawer-close
+          >
+            &times;
+          </button>
+        </div>
+        <div class="drawer-body">
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row__body settings-row__body--vert">
+              <div class="settings-row__body-left">
+                <div class="settings-row__body-left_title">Item Two</div>
+                <div class="settings-row__body-left_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+              <div class="settings-row__body-input">
+                <div class="form-element">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-footer">
+          <button class="btn btn-link" id="cancelDrawer" data-drawer-close>
+            Cancel
+          </button>
+          <button class="btn btn-primary" id="saveDrawer">Save</button>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.0.0/dist/tesseract.min.js"></script>
+  <script src="js/anyalyzer.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
 </html>
